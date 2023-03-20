@@ -25,7 +25,7 @@ Now lets run a container and note how we use environment variables.
 - `MYSQL_DATABASE` creates a database with the name of the env variable value `wordpress` in this example
 - `MYSQL_USER` creates a mariaDB user
 - `MYSQL_PASSWORD` creates a password for that user
-- `--default-authentication-plugin=mysql_native_password` is an argument for the process running int he docker container, extra options. 
+- `--default-authentication-plugin=mysql_native_password` is an argument for the process running in the docker container, extra options. 
   
 ```docker run --name db -e MYSQL_ROOT_PASSWORD=somewordpress -e MYSQL_PASSWORD=wordpress -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -d mariadb:10.6.4-focal --default-authentication-plugin=mysql_native_password```
 
